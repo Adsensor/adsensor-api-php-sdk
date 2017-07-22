@@ -1,0 +1,17 @@
+{
+  "name": "adsensor/adsensor-api-php-sdk",
+  "description": "Adsensor Advertising system API - PHP SDK",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ahmad Rezaei",
+      "email": "ahmad@adsensor.ir"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Adsensor\\API\\": "src/"
+    }
+  }
+}
