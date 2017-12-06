@@ -15,7 +15,13 @@ class AdMedia extends Object
      */
     public function create($file_path)
     {
-        $file = new \CURLFile($file_path);
+        $file = $file_path;
+        $substr = substr($file_path, 0, 4);
+
+        if($substr !== 'http') {
+            $file = new \CURLFile($file_path);
+        }
+
         $request = Request::request('/campaign/media', 'POST', ['file' => $file]);
         if(is_object($request)) {
             if( isset($request->{self::ID}) )
