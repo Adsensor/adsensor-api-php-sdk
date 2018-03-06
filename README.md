@@ -138,3 +138,14 @@ echo '<pre>';
 print_r($campains->all());
 echo '</pre>';
 ```
+
+Get a Instagram AD data by ID:
+
+```php
+$instagram_ad_id = ''; // insert Instagram AD ID here
+$adInfo = new InstagramAd($instagram_ad_id);
+
+echo '<pre>';
+print_r($adInfo->read());
+echo '</pre>';
+```
