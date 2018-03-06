@@ -17,7 +17,7 @@ class Request
     public static function request($path, $method = 'POST', $params = [])
     {
         $token = AdsensorAPI::$token;
-        $url = 'https://www.adsensor.ir/api/' . $token . $path;
+        $url = 'https://dashboard.adsensor.ir/api/' . $token . $path;
         $isPost = ($method == "POST") ? 1 : 0;
 
         $ch = curl_init();
